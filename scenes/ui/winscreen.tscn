@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://win_screen_1"]
+
+[ext_resource type="Script" path="res://scenes/ui/winscreen.gd" id="1_win"]
+
+[node name="WinScreen" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_win")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="CenterContainer"]
+
+[node name="VBox" type="VBoxContainer" parent="CenterContainer/Panel"]
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/Panel/VBox"]
+text = "You ate the burger successfully! Well done!"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="TimeLabel" type="Label" parent="CenterContainer/Panel/VBox"]
+text = "Time: 00:00.000"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="NameLabel" type="Label" parent="CenterContainer/Panel/VBox"]
+text = "Enter your name:"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="NameEdit" type="LineEdit" parent="CenterContainer/Panel/VBox"]
+placeholder_text = "Your name"
+
+[node name="ButtonRow" type="HBoxContainer" parent="CenterContainer/Panel/VBox"]
+theme_override_constants/separation = 10
+
+[node name="SubmitButton" type="Button" parent="CenterContainer/Panel/VBox/ButtonRow"]
+text = "Submit"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="SkipButton" type="Button" parent="CenterContainer/Panel/VBox/ButtonRow"]
+text = "Skip (Anonymous)"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="ToLeaderboardButton" type="Button" parent="CenterContainer/Panel/VBox"]
+text = "View Leaderboard"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="ToMenuButton" type="Button" parent="CenterContainer/Panel/VBox"]
+text = "Back to Main Menu"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+

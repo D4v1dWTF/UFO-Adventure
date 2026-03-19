@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c5qadhuqc84we"]
+
+[ext_resource type="Script" uid="uid://dcux1oyel81a3" path="res://scenes/entities/Bullet.gd" id="1_ma0cl"]
+[ext_resource type="Texture2D" uid="uid://b2ou48qhqsrj2" path="res://art/bullet.png" id="2_bullet_tex"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_byxw7"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r16mb"]
+radius = 6.0
+
+[node name="Bullet" type="Area2D" unique_id=1552103548]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_ma0cl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=421097259]
+modulate = Color(1, 1, 1, 1)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("2_bullet_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1978014247]
+shape = SubResource("CircleShape2D_r16mb")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=537188120]

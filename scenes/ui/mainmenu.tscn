@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://35qjpdfrlng2"]
+
+[ext_resource type="Script" uid="uid://coa0jvva7eklf" path="res://scenes/ui/mainmenu.gd" id="1_c040g"]
+
+[node name="MainMenu" type="Control" unique_id=2056336754]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 523.0
+offset_top = 245.0
+offset_right = 563.0
+offset_bottom = 285.0
+script = ExtResource("1_c040g")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=598431612]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1554566578]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1856227508]
+layout_mode = 2
+text = "Start"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="LeaderBoardButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1450295401]
+layout_mode = 2
+text = "Leaderboard"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="Settingbutton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=805903563]
+layout_mode = 2
+text = "Settings"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="Exit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=523366970]
+layout_mode = 2
+text = "Exit"
+theme_override_colors/font_color = Color(1, 1, 1, 1)

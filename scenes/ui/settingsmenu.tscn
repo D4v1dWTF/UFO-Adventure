@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://settings_menu_clean"]
+
+[ext_resource type="Script" uid="uid://dmp22hjs2seaw" path="res://scenes/ui/settingsmenu.gd" id="1_mav7u"]
+
+[node name="SettingsMenu" type="Control" unique_id=1497780884]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 466.0
+offset_top = 200.0
+offset_right = 506.0
+offset_bottom = 240.0
+script = ExtResource("1_mav7u")
+
+[node name="KeyConflictDialog" type="AcceptDialog" parent="." unique_id=1898305411]
+title = "Keybind Conflict"
+dialog_text = "That key is already used. Please choose a different key."
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2091040860]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=535086833]
+layout_mode = 2
+
+[node name="Settings" type="Label" parent="MarginContainer/VBoxContainer" unique_id=839213898]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Settings - Rebind Keys"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=966286718]
+layout_mode = 2
+columns = 3
+
+[node name="Left" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=950369991]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Move Left"
+
+[node name="RebindLeftButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1721051609]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "A"
+
+[node name="LeftKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=34611832]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: A"
+
+[node name="Right" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=988012288]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Move Right"
+
+[node name="RebindRightButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=2010541289]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "D"
+
+[node name="RightKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1560726392]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: D"
+
+[node name="Jump" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=77627789]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Up (Jump+Float)"
+
+[node name="RebindJumpButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1179384597]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "W"
+
+[node name="JumpKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=536527505]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: W"
+
+[node name="FloatDown" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=123350880]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Down"
+
+[node name="RebindFloatDownButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1323304812]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "S"
+
+[node name="FloatDownKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=290562829]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: S"
+
+[node name="Shoot" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=594901701]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Shoot"
+
+[node name="RebindShootButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=217068515]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "J"
+
+[node name="ShootKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1895134303]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: J"
+
+[node name="FloatCancel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=918762973]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Cancel Float"
+
+[node name="RebindFloatCancelButton" type="Button" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1454649320]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Space"
+
+[node name="FloatCancelKeyLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1845166097]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Default: Space"
+
+[node name="HintLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1133231107]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Click a button, then press a key..."
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1167518068]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Back"
+

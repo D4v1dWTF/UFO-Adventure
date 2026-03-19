@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://djojdhdshfrpt"]
+
+[ext_resource type="Script" uid="uid://ot4m287chcot" path="res://scenes/entities/lightball.gd" id="1_7yg1m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4nmc5"]
+load_path = "res://.godot/imported/light_ball.png-b80d918b808157c76ae87985d46514ea.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lightball"]
+radius = 7.071068
+
+[node name="LightBall" type="Area2D" unique_id=1670797813]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_7yg1m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1832559439]
+scale = Vector2(0.01, 0.01)
+texture = SubResource("CompressedTexture2D_4nmc5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1833108587]
+shape = SubResource("CircleShape2D_lightball")

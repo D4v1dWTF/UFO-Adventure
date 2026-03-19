@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dt5jj3eiaxbo7"]
+
+[ext_resource type="Script" uid="uid://0m5ids6gwdiy" path="res://scenes/entities/burger.gd" id="1_vx6pq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_odcbx"]
+load_path = "res://.godot/imported/burger.png-02c955e704e9e629b06dd43dc2656ea3.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_burger"]
+radius = 13.152946
+
+[node name="Burger" type="Area2D" unique_id=1415870615]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_vx6pq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=846163589]
+scale = Vector2(0.1, 0.1)
+texture = SubResource("CompressedTexture2D_odcbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720760459]
+shape = SubResource("CircleShape2D_burger")

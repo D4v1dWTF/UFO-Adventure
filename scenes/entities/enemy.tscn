@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dhv36ab4cl3t6"]
+
+[ext_resource type="Script" uid="uid://c5ly5hfs5owch" path="res://scenes/entities/enemy.gd" id="1_d7j71"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_67neu"]
+load_path = "res://.godot/imported/emeny.png-fe1e81eed948e3cb3417ba0a962e361c.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktqfp"]
+size = Vector2(35, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_damage"]
+size = Vector2(35, 35)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1795024817]
+collision_layer = 4
+script = ExtResource("1_d7j71")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=276415890]
+scale = Vector2(0.025, 0.025)
+texture = SubResource("CompressedTexture2D_67neu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=134832994]
+shape = SubResource("RectangleShape2D_ktqfp")
+
+[node name="DamageArea" type="Area2D" parent="." unique_id=338416721]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageArea" unique_id=449958381]
+shape = SubResource("RectangleShape2D_damage")
