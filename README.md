@@ -1,4 +1,4 @@
-# UFO Adventure (Godot 4)
+# UFO Adventure
 
 2D platformer made with **Godot 4.6.1**. You play as a **UFO** with a float/fuel mechanic, shoot enemies, collect items, and finish the run.
 
@@ -11,14 +11,14 @@ These are the default bindings (you can rebind them in **Settings**):
 - `Space`: Cancel float (drop down)  
 - `S`: Float down (move down while floating)  
 - `J`: Shoot  
-- `Esc`: Pause menu (Continue / Back to Menu)
+- `Esc`: Pause menu
 
 ## Gameplay features
 
 - **Float mode with fuel**: vertical movement uses fuel; fuel regenerates on ground.
 - **Bullets**: shoot in the direction you are facing; bullets disappear on impact.
 - **Enemies**: simple patrols and contact damage with invulnerability on respawn.
-- **Checkpoints (Beacons)**: touching a beacon sets your respawn point.
+- **Checkpoints**: touching a beacon sets your respawn point.
 - **Portals**: directed portals that teleport you to another portal location.
 - **Collectibles**:
   - **Light balls** increase your light-ball counter and can grant extra lives.
@@ -31,12 +31,9 @@ These are the default bindings (you can rebind them in **Settings**):
 
 ## How to run
 
-1. Open the project in Godot.
-2. Click **Run**.
-3. The main scene should start automatically.
-
-If you need to set it manually:
-- Main scene is `res://scenes/levels/mission_1.tscn`.
+1. Download the Windows build from the GitHub Release: https://github.com/D4v1dWTF/UFO-Adventure/releases/tag/v0.1.0
+2. Unzip the file.
+3. Run `UFO.adventure.exe`.
 
 ## Notes about saving data
 
