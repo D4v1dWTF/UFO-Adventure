@@ -50,5 +50,9 @@ This project uses UFO and game sprite PNGs: most were drawn by you on Pixilart, 
 ## Credits / Assets
 
 - Sprites drawn by you on Pixilart: https://www.pixilart.com/draw (UFO player, enemies, bullets, light balls, beacons, portals, etc.)
-- Burger sprite: from the internet (please replace with the URL and license you downloaded it from).
+- Burger sprite: from the internet.
+
+## Development
+
+This project is a beginner practice game to learn Godot, developed with help from Cursor during implementation.
 
